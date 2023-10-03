@@ -16,7 +16,7 @@ app.use(express.static(path.resolve(__dirname, 'static')));
 app.use(fileUpload({}));
 app.use('/api', router);
 
-//Обработка ошибок, последнгий Middleware
+//Обработка ошибок, последний Middleware
 app.use(errorHandler);
 
 const start = async () => {
